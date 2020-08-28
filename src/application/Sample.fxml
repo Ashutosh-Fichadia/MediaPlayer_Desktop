@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="main" prefHeight="750.0" prefWidth="1400.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <HBox fx:id="hbx" alignment="CENTER" layoutX="-2.0" layoutY="-3.0" prefHeight="750.0" prefWidth="1400.0" style="-fx-background-color: black;">
+         <children>
+            <MediaView fx:id="mView" fitHeight="750.0" fitWidth="1400.0" />
+         </children>
+      </HBox>
+      <Pane fx:id="controls" layoutY="-1.0" prefHeight="750.0" prefWidth="1400.0" styleClass="controls" stylesheets="@application.css">
+         <children>
+            <Button fx:id="stop" layoutX="67.0" layoutY="696.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="41.0" styleClass="stop" />
+            <Button fx:id="prev10" layoutX="602.0" layoutY="363.0" mnemonicParsing="false" styleClass="prev10" stylesheets="@application.css" />
+            <Button fx:id="next10" layoutX="749.0" layoutY="363.0" mnemonicParsing="false" styleClass="next10" stylesheets="@application.css" />
+            <ToggleButton fx:id="lplay" layoutX="14.0" layoutY="696.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="41.0" styleClass="play" stylesheets="@application.css" />
+            <ToggleButton fx:id="cplay" layoutX="669.0" layoutY="350.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="63.0" styleClass="play" stylesheets="@application.css" />
+            <ToggleButton fx:id="mute" layoutX="126.0" layoutY="696.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="41.0" styleClass="mute" stylesheets="@application.css" />
+            <Label fx:id="dur" layoutX="194.0" layoutY="709.0" prefHeight="17.0" prefWidth="63.0" styleClass="dur" textFill="#fffefe" />
+            <Label fx:id="dur1" layoutX="261.0" layoutY="709.0" prefHeight="17.0" prefWidth="63.0" styleClass="dur" textFill="#f2f0f0" />
+            <Slider fx:id="slider" layoutX="5.0" layoutY="683.0" maxHeight="17.0" maxWidth="1400.0" minHeight="0.0" minWidth="0.0" prefHeight="6.0" prefWidth="1353.0" stylesheets="@application.css" />
+            <Pane fx:id="vpane" layoutX="222.0" layoutY="659.0" prefHeight="115.0" prefWidth="26.0" rotate="90.0" style="-fx-background-color: BLACK;" styleClass="vpane">
+               <children>
+                  <Slider fx:id="vslider" layoutX="4.0" layoutY="5.0" orientation="VERTICAL" prefHeight="107.0" prefWidth="0.0" />
+               </children>
+            </Pane>
+            <FontAwesomeIcon fill="#f5f4f4" glyphName="GEAR" layoutX="1323.0" layoutY="723.0" size="30" />
+         </children>
+      </Pane>
+      <AnchorPane fx:id="welcome" prefHeight="750.0" prefWidth="1400.0" styleClass="welcome" stylesheets="@application.css">
+         <children>
+            <Button fx:id="openbtn" layoutX="318.0" layoutY="14.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="86.0" styleClass="openbtn" stylesheets="@application.css" text="Open" />
+            <Button fx:id="loadbtn" layoutX="433.0" layoutY="14.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="86.0" styleClass="loadbtn" stylesheets="@application.css" text="Load" />
+            <TextField fx:id="txtnm" layoutX="14.0" layoutY="14.0" prefHeight="42.0" prefWidth="288.0" promptText="Enter Path" style="-fx-background-color: #10181F;" styleClass="txt" stylesheets="@application.css">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Button layoutX="592.0" layoutY="271.0" mnemonicParsing="false" style="-fx-background-color: Transparent;">
+               <graphic>
+                  <FontAwesomeIcon fill="RED" glyphName="YOUTUBE_PLAY" size="200" />
+               </graphic>
+            </Button>
+            <Label alignment="CENTER" layoutX="621.0" layoutY="459.0" prefHeight="41.0" prefWidth="158.0" text="AFTube" textFill="#fffefe">
+               <font>
+                  <Font name="System Bold" size="33.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

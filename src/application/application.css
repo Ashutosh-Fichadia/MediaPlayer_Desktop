@@ -1,0 +1,126 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.slider{
+	-fx-background-color: transparent ;
+     -fx-color:#549534;
+}
+.slider > .thumb {
+     -fx-background-color: #FF0000;
+}
+.slider > .track {
+	 
+     -fx-background-color: #8B8B8C;
+}
+.txt{
+	-fx-background-color: linear-gradient(21deg, #10abff, #1beabd);
+	
+	
+	-fx-padding: 3px;
+	
+
+	-fx-display-caret:  inline-block;
+	-fx-text-fill: #a1a1a1;
+	
+	-fx-background-radius: 9999em;
+}
+.openbtn {
+	
+    -fx-padding: 8 15 15 15;
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #500 0%, #800 100%),
+        #a00,
+        #c00,
+        radial-gradient(center 50% 50%, radius 100%, #f44, #FF0000);
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+}
+.openbtn:hover {
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #500 0%, #400 100%),
+        #a00,
+        #c00,
+        radial-gradient(center 50% 50%, radius 100%, #f33, #f55);
+}
+.openbtn:pressed {
+    -fx-padding: 10 15 13 15;
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+.loadbtn{
+    -fx-padding: 8 15 15 15;
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #500 0%, #800 100%),
+        #a00,
+        #c00,
+        radial-gradient(center 50% 50%, radius 100%, #f44, #FF0000);
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+}
+.loadbtn:hover {
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #500 0%, #400 100%),
+        #a00,
+        #c00,
+        radial-gradient(center 50% 50%, radius 100%, #f33, #f55);
+}
+.loadbtn:pressed {
+    -fx-padding: 10 15 13 15;
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+.play{
+	-fx-background-color: transparent;
+	-fx-background-radius: 60;
+	-fx-max-width: 100px;
+	-fx-max-height: 500px;
+	
+}
+.play:pressed{
+	-fx-padding: 10 15 13 15;
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+.next10{
+	 -fx-background-color:transparent;
+	 -fx-background-radius: 30;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: linear-gradient(#ffd65b, #e68400),
+        linear-gradient(#ffef84, #f2ba44),
+        linear-gradient(#ffea6a, #efaa22),
+        linear-gradient(#ffe657 0%, #f8c202 50%, #eea10b 100%),
+        linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));
+    
+}
+.next10:pressed{
+	-fx-padding: 10 15 13 15;
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+.prev10{
+	-fx-background-color: transparent ;
+}
+.prev10:pressed{
+	-fx-padding: 10 15 13 15;
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+.stop{
+	
+	-fx-background-color: transparent;
+	-fx-background-radius: 60;
+	-fx-max-width: 100px;
+	-fx-max-height: 500px;
+}
+.stop:pressed{
+	-fx-padding: 10 15 13 15;
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+.mute{
+	-fx-background-color: transparent;
+	-fx-background-radius: 60;
+	-fx-max-width: 100px;
+	-fx-max-height: 500px;
+}.mute:pressed{
+	-fx-padding: 10 15 13 15;
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
